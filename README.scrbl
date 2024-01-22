@@ -43,7 +43,7 @@ Or one argument placed in two different places:
 Or we can get crazy!
 
 @example{
-(mapcar #¿(list ?num ? ?num ?sym "A lot of arguments!" ?num ?sym ?)
+(mapcar #¿(list ?num ? ?num ?char "A lot of arguments!" ?num ?char ?)
         '(1 2 3) '(a b c) '(#\x #\y #\z) '("AA" "BB" "CC"))
 }
 

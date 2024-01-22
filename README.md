@@ -19,7 +19,7 @@ After loading the system ``` allioli ```\, enable the named readtable ``` alliol
 (named-readtables:in-readtable allioli:syntax)
 `````
 `````common-lisp
-#<:named-readtable allioli:syntax {1005AE2863}>
+#<:named-readtable allioli:syntax {1005C2ABC3}>
 `````
 
 And start creating short lambdas on the fly\.
@@ -55,7 +55,7 @@ Or one argument placed in two different places\:
 Or we can get crazy\!
 
 `````common-lisp
-(mapcar #¿(list ?num ? ?num ?sym "A lot of arguments!" ?num ?sym ?)
+(mapcar #¿(list ?num ? ?num ?char "A lot of arguments!" ?num ?char ?)
         '(1 2 3) '(a b c) '(#\x #\y #\z) '("AA" "BB" "CC"))
 `````
 `````common-lisp
