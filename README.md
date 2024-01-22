@@ -1,7 +1,7 @@
-<a id="header-adp-github-headertag656"></a>
+<a id="header-adp-github-headertag610"></a>
 # Allioli
 
-<img src="/images/allioli-icon.png" alt="Allioli logo" width="100%">
+<img src="/images/allioli-icon.png" alt="Allioli logo" width="20%">
 
 Welcome to Allioli\!\!
 
@@ -10,7 +10,7 @@ This is a tiny project that creates the named readtable ``` allioli:syntax ``` w
 The purpose of ``` Allioli ``` is make easier the creation of short lambdas\.
 
 
-<a id="header-adp-github-headertag657"></a>
+<a id="header-adp-github-headertag611"></a>
 ## Quick start
 
 After loading the system ``` allioli ```\, enable the named readtable ``` allioli:syntax ```\:
@@ -19,7 +19,7 @@ After loading the system ``` allioli ```\, enable the named readtable ``` alliol
 (named-readtables:in-readtable allioli:syntax)
 `````
 `````common-lisp
-#<:named-readtable allioli:syntax {1005CB0383}>
+#<:named-readtable allioli:syntax {1005AE2863}>
 `````
 
 And start creating short lambdas on the fly\.
@@ -65,7 +65,7 @@ Or we can get crazy\!
 `````
 
 
-<a id="header-adp-github-headertag673"></a>
+<a id="header-adp-github-headertag627"></a>
 ## Description
 
 After ``` #¿ ``` is written\, each symbol whose name starts with the character ``` ? ``` can create a new argument for the lambda\. If the exact name of the symbol is ``` "?" ```\, then a new argument is created\. If its name is longer a new argument is created only if a symbol with that name didn\'t appear earlier\.
@@ -75,7 +75,7 @@ After ``` #¿ ``` is written\, each symbol whose name starts with the character 
 '#¿(some-form ? ?arg ?another-arg (? ?arg) (?another-arg (?yet-another-arg) ?another-arg))
 `````
 `````common-lisp
-(lambda (?674 ?arg ?another-arg ?675 ?yet-another-arg)
-  (some-form ?674 ?arg ?another-arg (?675 ?arg)
+(lambda (?628 ?arg ?another-arg ?629 ?yet-another-arg)
+  (some-form ?628 ?arg ?another-arg (?629 ?arg)
    (?another-arg (?yet-another-arg) ?another-arg)))
 `````

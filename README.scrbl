@@ -3,7 +3,7 @@
 
 @header{Allioli}
 
-@image["images/allioli-icon.png" :alt-text "Allioli logo" :scale 1.0]
+@image["images/allioli-icon.png" :alt-text "Allioli logo" :scale 0.2]
 
 Welcome to Allioli!!
 
