@@ -6,8 +6,8 @@
                (:file "allioli")))
 
 
-(defsystem "allioli/docs"
-  :defsystem-depends-on ("adp-github")
-  :build-operation "adp-github-op"
-  :depends-on ("allioli")
-  :components ((:scribble "README")))
+;; (defsystem "allioli/docs"
+;;   :defsystem-depends-on ("adp-github")
+;;   :build-operation "adp-github-op"
+;;   :depends-on ("allioli")
+;;   :components ((:scribble "README")))
