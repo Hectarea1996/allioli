@@ -1,6 +1,9 @@
 
 
 (defsystem "allioli"
+  :author "Héctor Galbis Sanchis"
+  :description "Alliolification"
+  :license "MIT"
   :depends-on ("named-readtables")
   :components ((:file "package")
                (:file "allioli")))
