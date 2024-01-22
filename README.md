@@ -19,7 +19,7 @@ After loading the system ``` allioli ```\, enable the named readtable ``` alliol
 (named-readtables:in-readtable allioli:syntax)
 `````
 `````common-lisp
-#<:named-readtable allioli:syntax {1005C2ABC3}>
+#<:named-readtable allioli:syntax {1005C2A173}>
 `````
 
 And start creating short lambdas on the fly\.
@@ -68,7 +68,7 @@ Or we can get crazy\!
 <a id="header-adp-github-headertag627"></a>
 ## Description
 
-After ``` #¿ ``` is written\, each symbol whose name starts with the character ``` ? ``` can create a new argument for the lambda\. If the exact name of the symbol is ``` "?" ```\, then a new argument is created\. If its name is longer a new argument is created only if a symbol with that name didn\'t appear earlier\.
+After ``` #¿ ``` is written\, each symbol whose name starts with the character ``` ? ``` can create a new argument for the lambda\. If the exact name of the symbol is ``` "?" ```\, then a new argument is created\. If its name is longer a new argument is created only if a symbol with that name didn\'t appear before\.
 
 `````common-lisp
 ;;            1   2       3        4   2          3               5               3

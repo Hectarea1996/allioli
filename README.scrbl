@@ -50,7 +50,7 @@ Or we can get crazy!
 
 @subheader{Description}
 
-After @code{#¿} is written, each symbol whose name starts with the character @code{?} can create a new argument for the lambda. If the exact name of the symbol is @code{"?"}, then a new argument is created. If its name is longer a new argument is created only if a symbol with that name didn't appear earlier.
+After @code{#¿} is written, each symbol whose name starts with the character @code{?} can create a new argument for the lambda. If the exact name of the symbol is @code{"?"}, then a new argument is created. If its name is longer a new argument is created only if a symbol with that name didn't appear before.
 
 @example{
 ;;            1   2       3        4   2          3               5               3  
