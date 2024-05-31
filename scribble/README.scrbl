@@ -1,6 +1,8 @@
 
 (in-package #:adp-github)
 
+@select-output-file["/README.md"]
+
 @header{Allioli}
 
 @image["images/allioli-icon.png" :alt-text "Allioli logo" :scale 0.2]
@@ -10,6 +12,25 @@ Welcome to Allioli!!
 This is a tiny project that creates the named readtable @code{allioli:syntax} with the only dispatch character macro @code{#¿}.
 
 The purpose of @code{Allioli} is make easier the creation of short lambdas.
+
+
+@subheader{Installation}
+
+@itemize[
+@item{Manual:}
+]
+@code-block[:lang "sh"]{
+cd ~/common-lisp
+git clone https://github.com/Hectarea1996/allioli.git
+}
+@itemize[
+@item{Quicklisp (Ultralisp):}
+]
+@code-block[:lang "common-lisp"]{
+(ql-dist:install-dist "http://dist.ultralisp.org/" :prompt nil)
+(ql:quickload "allioli")
+}
+
 
 
 @subheader{Quick start}

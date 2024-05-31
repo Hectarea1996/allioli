@@ -1,4 +1,6 @@
-<a id="header-adp-github-headertag610"></a>
+
+
+<a id="header-adp-github-headertag662"></a>
 # Allioli
 
 <img src="/images/allioli-icon.png" alt="Allioli logo" width="20%">
@@ -10,7 +12,25 @@ This is a tiny project that creates the named readtable ``` allioli:syntax ``` w
 The purpose of ``` Allioli ``` is make easier the creation of short lambdas\.
 
 
-<a id="header-adp-github-headertag611"></a>
+<a id="header-adp-github-headertag663"></a>
+## Installation
+
+* Manual\:
+
+`````sh
+cd ~/common-lisp
+git clone https://github.com/Hectarea1996/allioli.git
+`````
+* Quicklisp \(Ultralisp\)\:
+
+`````common-lisp
+(ql-dist:install-dist "http://dist.ultralisp.org/" :prompt nil)
+(ql:quickload "allioli")
+`````
+
+
+
+<a id="header-adp-github-headertag664"></a>
 ## Quick start
 
 After loading the system ``` allioli ```\, enable the named readtable ``` allioli:syntax ```\:
@@ -19,7 +39,7 @@ After loading the system ``` allioli ```\, enable the named readtable ``` alliol
 (named-readtables:in-readtable allioli:syntax)
 `````
 `````common-lisp
-#<:named-readtable allioli:syntax {1005C2A173}>
+#<:named-readtable allioli:syntax {100522D013}>
 `````
 
 And start creating short lambdas on the fly\.
@@ -65,7 +85,7 @@ Or we can get crazy\!
 `````
 
 
-<a id="header-adp-github-headertag627"></a>
+<a id="header-adp-github-headertag680"></a>
 ## Description
 
 After ``` #¿ ``` is written\, each symbol whose name starts with the character ``` ? ``` can create a new argument for the lambda\. If the exact name of the symbol is ``` "?" ```\, then a new argument is created\. If its name is longer a new argument is created only if a symbol with that name didn\'t appear before\.
@@ -75,7 +95,7 @@ After ``` #¿ ``` is written\, each symbol whose name starts with the character 
 '#¿(some-form ? ?arg ?another-arg (? ?arg) (?another-arg (?yet-another-arg) ?another-arg))
 `````
 `````common-lisp
-(lambda (?628 ?arg ?another-arg ?629 ?yet-another-arg)
-  (some-form ?628 ?arg ?another-arg (?629 ?arg)
+(lambda (?681 ?arg ?another-arg ?682 ?yet-another-arg)
+  (some-form ?681 ?arg ?another-arg (?682 ?arg)
    (?another-arg (?yet-another-arg) ?another-arg)))
 `````
