@@ -47,7 +47,6 @@ returned."
   "Returns a processed form substituting ARG-TYPEs."
   (cond
     ((consp form)
-     (format t "Car: ~s : ~s | Cdr: ~s : ~s~%" (car form) (type-of (car form)) (cdr form) (type-of (cdr form)))
      (cons (process-form (car form)) (process-form (cdr form))))
     (t (process-datum form))))
 
