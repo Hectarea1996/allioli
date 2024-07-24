@@ -47,6 +47,7 @@ returned."
   "Returns a processed form substituting ARG-TYPEs."
   (cond
     ((consp form)
+     (format t "Car: ~s : ~s | Cdr: ~s : ~s~%" (car form) (type-of (car form)) (cdr form) (type-of (cdr form)))
      (cons (process-form (car form)) (process-form (cdr form))))
     (t (process-datum form))))
 
@@ -66,7 +67,10 @@ argument will be received and no more."
 (defun read-allioli (s c n)
   "Reads the next form of a stream and returns the form processed by ALLIOLI."
   (declare (ignore c n))
-  (allioli (read s)))
+  (let ((form nil))
+    (let ((*readtable* (named-readtables:find-readtable :fare-quasiquote)))
+      (setf form (read s)))
+    (allioli form)))
 
 
 (named-readtables:defreadtable syntax

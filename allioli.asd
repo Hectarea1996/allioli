@@ -4,7 +4,7 @@
   :author "Héctor Galbis Sanchis"
   :description "Alliolification"
   :license "MIT"
-  :depends-on ("named-readtables")
+  :depends-on ("named-readtables" "fare-quasiquote-extras")
   :components ((:file "src/package")
                (:module "src"
                 :depends-on ("src/package")
